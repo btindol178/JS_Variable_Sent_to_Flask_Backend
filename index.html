@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+  
+  <body>
+    <br>
+    <form action="" method="post" id='myForm'>
+      <button name="button" value="value">Send</button>
+  </form>
+  
+  <form action="" method="post" id='myForm2'>
+      <button id="myButton2" name="button2" value=0 onclick="modifyData()">Send</button>
+  </form>
+  
+  </body>
+</html>
+<script>
+  function modifyData() {
+      data = "I want to send this to backend"
+      document.getElementById("myButton2").value = data;
+  }
+</script>
